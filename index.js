@@ -54,7 +54,23 @@ const WebsiteType = new GraphQLObjectType({
         type: new GraphQLList(OwnerType),
         description: 'List of All Owners',
         resolve: () => Owners
-      }
+      },
+      website: {
+        type: WebsiteType,
+        description: 'A Single Website',
+        args: {
+          id: { type: GraphQLInt }
+        },
+        resolve: (parent, args) => Websites.find(website => website.id === args.id)
+      },
+      owner: {
+        type: OwnerType,
+        description: 'A Single Owner',
+        args: {
+          id: { type: GraphQLInt }
+        },
+        resolve: (parent, args) => Owners.find(owner => owner.id === args.id)
+      }      
     })
   })
 
