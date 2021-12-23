@@ -1,0 +1,27 @@
+{
+  "name": "gaphql-crud-example",
+  "version": "1.0.0",
+  "description": "a simple graphql code that will be used as reference for future projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaenelleisidro/gaphql-crud-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaenelleisidro/gaphql-crud-example/issues"
+  },
+  "homepage": "https://github.com/jaenelleisidro/gaphql-crud-example#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.2.0",
+    "nodemon": "^2.0.15"
+  }
+}

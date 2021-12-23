@@ -14,3 +14,13 @@ https://www.youtube.com/watch?v=PpCF8yRtd_A
 
 
 # Let's begin
+
+well just follow the tutorial, the only mistakes are 
+
+GraphQLNonNull(GraphQLInt) should be new GraphQLNonNull(GraphQLInt)
+
+and it forgot to include the schema on the middleware
+
+app.use('/graphql', graphqlHTTP({graphiql: true})); 
+should be
+app.use('/graphql', graphqlHTTP({schema,graphiql: true}));
